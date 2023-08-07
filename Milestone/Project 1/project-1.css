@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@500&family=Reem+Kufi+Ink&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.main-section {
+  width: 100%;
+  padding: 70px 0px;
+}
+.nav-bar {
+  z-index: 300;
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+.logo-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  width: 60%;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.nav-list > li > a {
+  font-family: "Montserrat", sans-serif;
+  color: #5f5f5f;
+  font-weight: 500;
+  text-decoration: none;
+}
+.sign-up-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border: 1px solid black;
+  padding: 15px 25px;
+  background-color: #fff;
+  cursor: pointer;
+}
+#Home {
+  color: #ff5100;
+}
+.main {
+  margin-top: 50px;
+  display: flex;
+}
+.main-text {
+  padding: 40px 90px;
+  width: 50%;
+}
+.main-text > h1 {
+  font-family: "Reem Kufi Ink", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 47px;
+}
+.main-text > h4 {
+  margin-top: -20px;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 7px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(38, 38, 38);
+  border-left: #5f5f5f 2px solid;
+}
+.main-img {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.combined-img {
+  top: 10%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.combined-img > img {
+  position: absolute;
+}
+.overlap-man {
+  mask: url(./main-image-bg.png) bottom / cover no-repeat;
+  scale: 1.66;
+}
+.overlap-pattern {
+  transform: translateY(-20px);
+}
+.main-buttons-container {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-buttons-container > button {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+  padding: 15px 25px;
+  cursor: pointer;
+}
+.get-started-btn {
+  border: none;
+  background: #ff5100;
+  color: white;
+}
+.learn-more-btn {
+  border: 1px solid black;
+  background: #fff;
+}
+.floating-vectors {
+  position: absolute;
+}
+#circle {
+  top: 80%;
+  right: 5%;
+}
+#curve-arrow {
+  top: 65%;
+  left: 30%;
+}
+#green-arrow {
+  top: 85%;
+  right: 35%;
+}
+#orange-arrow {
+  top: 20%;
+  right: 40%;
+}
+.footer-section {
+  color: white;
+  padding: 35px;
+  margin-top: 80px;
+  background: #262543;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-us > h2 {
+  font-family: "Reem Kufi Ink", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: -10px;
+}
+.footer-section h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -12px;
+  color: #b3b3b3;
+}
+.card > h3 {
+  font-family: "Reem Kufi Ink", sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.card > img {
+  padding: 7px;
+  border-radius: 10px;
+}
+.teacher {
+  background: cyan;
+}
+.courses {
+  background: #ff5100;
+}
+.support {
+  background: darkslateblue;
+}
