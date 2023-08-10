@@ -105,7 +105,7 @@ body {
   transform: translateY(-20px);
 }
 .main-buttons-container {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
 }
@@ -131,16 +131,16 @@ body {
   position: absolute;
 }
 #circle {
-  top: 55%;
-  right: 10%;
+  top: 65%;
+  right: 3%;
 }
 #curve-arrow {
-  top: 50%;
-  left: 27%;
+  top: 60%;
+  left: 35%;
 }
 #green-arrow {
-  top: 62%;
-  right: 30%;
+  top: 75%;
+  right: 38%;
 }
 #orange-arrow {
   top: 20%;
