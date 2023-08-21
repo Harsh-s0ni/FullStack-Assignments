@@ -1,5 +1,5 @@
 // 1.
-let totalValue = 2000;
+let totalValue =  2000;
 let discountPercentage = 20;
 let discountValue = (totalValue * discountPercentage) / 100;
 console.log(
