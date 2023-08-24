@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05</title>
+  </head>
+  <body>
+    <h1 id="text">Your image is visible</h1>
+    <button onclick="toggle()">Toggle Image</button>
+    <div style="margin-top: 2%">
+      <img
+        id="image"
+        style="visibility: visible"
+        src="https://picsum.photos/id/237/400/300"
+        alt="" />
+    </div>
+  </body>
+</html>
+
+<script>
+  const text = document.getElementById("text");
+  const img = document.getElementById("image");
+  function toggle() {
+    const isVisible = img.style.visibility;
+    if (isVisible == "visible") {
+      text.innerText = "Your image is hidden";
+      img.style.visibility = "hidden";
+    } else {
+      text.innerText = "Your image is visible";
+      img.style.visibility = "visible";
+    }
+  }
+</script>

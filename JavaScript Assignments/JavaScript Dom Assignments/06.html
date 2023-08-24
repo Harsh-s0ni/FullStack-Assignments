@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>06</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  document.body.innerHTML = `<h1>which is favorite Programming Language: <select name="" id="select"></select></h1>`;
+  const select = document.getElementById("select");
+  const arr = ["JavaScript", "Java", "Python", "C++"];
+  for (const i in arr) {
+    select.innerHTML += `<option>${arr[i]}</option>`;
+  }
+</script>

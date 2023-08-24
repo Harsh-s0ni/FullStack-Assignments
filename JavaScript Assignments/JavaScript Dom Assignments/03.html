@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03</title>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        width: 5%;
+        justify-content: space-between;
+      ">
+      <button id="plus" onclick="Add()">+</button>
+      <h1 id="text"></h1>
+      <button id="minus" onclick="Subtract()">-</button>
+    </div>
+  </body>
+</html>
+<script>
+  const text = document.getElementById("text");
+  let x = 0;
+  text.innerText = x;
+  function Add() {
+    x += 1;
+    text.innerText = x;
+  }
+  function Subtract() {
+    x -= 1;
+    if (x < 0) {
+      alert("Counting is going beyond zero");
+      x = 0;
+    }
+    text.innerText = x;
+  }
+</script>

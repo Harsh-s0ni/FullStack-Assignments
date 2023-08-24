@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    ">
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        color: white;
+      ">
+      <h1 id="hour"></h1>
+      <h1>:</h1>
+      <h1 id="minute"></h1>
+      <h1>:</h1>
+      <h1 id="second"></h1>
+    </div>
+  </body>
+</html>
+
+<script>
+  const bgc = document.body;
+  function getTime() {
+    const date = new Date();
+    let hour = date.getHours();
+    let second = date.getSeconds();
+    let minute = date.getMinutes();
+    let hexCode = `#${hour}${minute}${second}`;
+    bgc.style.backgroundColor = hexCode;
+    const hourText = document.getElementById("hour");
+    const minuteText = document.getElementById("minute");
+    const secondText = document.getElementById("second");
+    hourText.innerText = hour;
+    minuteText.innerText = minute;
+    secondText.innerText = second;
+  }
+  setInterval(getTime, 1000);
+</script>

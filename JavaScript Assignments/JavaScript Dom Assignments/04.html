@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04</title>
+  </head>
+  <body style="display: flex; justify-content: center">
+    <form
+      action=""
+      onsubmit="fromValidation(event)"
+      style="
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: 15rem;
+        justify-content: space-between;
+      ">
+      <h1>Sign Up Form</h1>
+      <label for=""
+        >Name: <input type="text" id="name" placeholder="(Minium 3 characters)"
+      /></label>
+      <label for=""
+        >Email: <input id="email" type="email" placeholder="Enter your email"
+      /></label>
+      <label for=""
+        >Password:
+        <input
+          id="password"
+          type="password"
+          placeholder="(Minimum 8 characters)"
+      /></label>
+      <button id="btn">Submit</button>
+    </form>
+  </body>
+</html>
+
+<script>
+  function fromValidation(event) {
+    event.preventDefault();
+    const name = document.getElementById("name");
+    const password = document.getElementById("password");
+    if (name.value.length >= 3 && password.value.length >= 8) {
+      alert("Form Validation successful");
+    } else {
+      alert("Form Validation failed.");
+    }
+  }
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM Assignment</title>
+  </head>
+  <body>
+    <h1>Upload Profile Picture</h1>
+    <input type="file" id="input" onchange="imageSelected()" />
+    <h2>Your Profile Picture</h2>
+    <img src="" alt="No Profile Picture" id="image" />
+  </body>
+</html>
+
+<script>
+  const input = document.getElementById("input");
+  const image = document.getElementById("image");
+  function imageSelected() {
+    const reader = new FileReader();
+    reader.readAsDataURL(input.files[0]);
+    reader.onload = () => {
+      image.src = reader.result;
+    };
+  }
+</script>
