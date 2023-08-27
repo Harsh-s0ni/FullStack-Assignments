@@ -31,3 +31,6 @@ Explore the landing page to witness firsthand the captivating design and the fru
 I highly value your feedback! If you have any suggestions, ideas for improvements, or questions, please feel free to [contact me](mailto:hsoni6954@gmail.com). Your input is instrumental in helping me refine my skills and create even better projects in the future.
 
 Thank you for taking the time to explore this showcase of my front-end web development abilities. I hope you find the Bike Landing Page visually striking and inspiring.
+
+## Preview
+
