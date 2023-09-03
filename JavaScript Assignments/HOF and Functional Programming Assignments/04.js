@@ -35,3 +35,11 @@ const before2010 = books.filter((item) => {
   }
 });
 console.log(remaining);
+
+/*
+OUTPUT:
+[
+  { name: 'Slavage the Bones', author: 'JESMYN WARD', year: 2012 },
+  { name: "The Tiger's Wife", author: 'TEA OBREHT', year: 2011 }
+]
+*/
